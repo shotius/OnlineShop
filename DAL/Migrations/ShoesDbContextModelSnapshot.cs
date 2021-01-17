@@ -130,7 +130,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("TypeId");
 
-                    b.ToTable("Products");
+                    b.ToTable("ManyShoes");
 
                     b.HasData(
                         new
@@ -138,7 +138,7 @@ namespace DAL.Migrations
                             Id = 1,
                             BrandId = 6,
                             Color = "blue",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
+                            Picture = "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                             Price = 100m,
                             ProductionCountry = "Georgia",
                             TypeId = 4
@@ -148,7 +148,7 @@ namespace DAL.Migrations
                             Id = 2,
                             BrandId = 5,
                             Color = "gray",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
+                            Picture = "https://images-na.ssl-images-amazon.com/images/I/61utX8kBDlL._UL1100_.jpg",
                             Price = 200m,
                             ProductionCountry = "USA",
                             TypeId = 1
@@ -158,7 +158,7 @@ namespace DAL.Migrations
                             Id = 3,
                             BrandId = 6,
                             Color = "white",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
+                            Picture = "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                             Price = 20m,
                             ProductionCountry = "Chine",
                             TypeId = 2
@@ -166,29 +166,29 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 4,
-                            BrandId = 6,
+                            BrandId = 5,
                             Color = "white",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
-                            Price = 20m,
-                            ProductionCountry = "China",
+                            Picture = "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/12786380/2020/10/20/57e4ead2-0e80-48b4-bee0-cece0f1c68c61603176607927mrwonkerMenMulticolouredSneakers1.jpg",
+                            Price = 50m,
+                            ProductionCountry = "England",
                             TypeId = 2
                         },
                         new
                         {
                             Id = 5,
-                            BrandId = 6,
-                            Color = "white",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
-                            Price = 20m,
-                            ProductionCountry = "China",
+                            BrandId = 4,
+                            Color = "red",
+                            Picture = "https://d11lddvh7wcsbc.cloudfront.net/images/thumbnails/423/635/detailed/66/TB2jVBbapXXXXXaXpXXXXXXXXXX-1642940732_03.jpg?t=1445233181",
+                            Price = 90m,
+                            ProductionCountry = "Vietnam",
                             TypeId = 2
                         },
                         new
                         {
                             Id = 6,
                             BrandId = 6,
-                            Color = "black",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
+                            Color = "white",
+                            Picture = "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/TLP-whiteblackgum-1b_f7bf4f70-1360-42ca-b8f1-01635ba74be2.jpg?v=1592607370",
                             Price = 20m,
                             ProductionCountry = "China",
                             TypeId = 2
@@ -197,10 +197,10 @@ namespace DAL.Migrations
                         {
                             Id = 7,
                             BrandId = 7,
-                            Color = "pink",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
-                            Price = 20m,
-                            ProductionCountry = "China",
+                            Color = "gray",
+                            Picture = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shoes-1-1594143237.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
+                            Price = 190m,
+                            ProductionCountry = "USA",
                             TypeId = 3
                         },
                         new
@@ -208,10 +208,50 @@ namespace DAL.Migrations
                             Id = 8,
                             BrandId = 8,
                             Color = "white",
-                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-9cfea66d-b519-4b29-8e43-ce4164e8c558/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS.jpg",
+                            Picture = "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2019/12/31/167d5528-d459-4139-bc8e-2c8f88b6eb361577741582295-1.jpg",
                             Price = 200m,
                             ProductionCountry = "Germany",
                             TypeId = 4
+                        },
+                        new
+                        {
+                            Id = 9,
+                            BrandId = 7,
+                            Color = "pink",
+                            Picture = "https://i.pinimg.com/236x/4c/98/67/4c98674974e248680fb500c84215f2c1.jpg",
+                            Price = 20m,
+                            ProductionCountry = "China",
+                            TypeId = 3
+                        },
+                        new
+                        {
+                            Id = 10,
+                            BrandId = 7,
+                            Color = "pink",
+                            Picture = "https://assets.ajio.com/medias/sys_master/root/20200824/mHh2/5f438ad5f997dd2277a73477/-288Wx360H-461370283-brown-MODEL.jpg",
+                            Price = 20m,
+                            ProductionCountry = "China",
+                            TypeId = 3
+                        },
+                        new
+                        {
+                            Id = 11,
+                            BrandId = 7,
+                            Color = "pink",
+                            Picture = "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/96b006c4-bc46-4a04-a48c-cc1039329d54/renew-run-womens-running-shoe-9CrB26.jpg",
+                            Price = 20m,
+                            ProductionCountry = "China",
+                            TypeId = 3
+                        },
+                        new
+                        {
+                            Id = 12,
+                            BrandId = 7,
+                            Color = "pink",
+                            Picture = "https://rukminim1.flixcart.com/image/714/857/k391w280/shoe/m/n/c/irsoe-9905-shoes-40-cassiey-white-original-imafmf9dyfzghms2.jpeg?q=50",
+                            Price = 20m,
+                            ProductionCountry = "China",
+                            TypeId = 3
                         });
                 });
 

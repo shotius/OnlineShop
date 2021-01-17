@@ -1,0 +1,26 @@
+﻿@model ShoesListVM
+@{
+    ViewData["Title"] = "ShoesDetails";
+}
+
+
+<h1>Shoes Description</h1>
+<div class="card mb-3" >
+    <div class="row g-0">
+        <div class="col-md-6">
+              <img src="@Model.OnePairShoes.Picture" style="max-width: 100%; margin: 5px;" alt="Shoes pic">
+        </div>
+        <div class="col-md-6">
+            <div class="card-body">
+                <h5 class="card-title">@Model.OnePairShoes.Color Shoes </h5>
+                <p>Desctiption: </p>
+                <p class="card-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p class="card-text"><strong>Price: </strong>@Model.OnePairShoes.Price</p>
+                <a type="submit" asp-action="AddToBasket" asp-route-id="@Model.OnePairShoes.Id" class="btn btn-primary" style="color: white;">Add To Basket</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

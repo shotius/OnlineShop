@@ -9,7 +9,7 @@ namespace Services.Repositories
     public class UOW : IUOW
     {
 
-        private ShoesDbContext _context;
+        private readonly ShoesDbContext _context;
         private IShoesRepository _shoesRepository;
 
         public UOW(ShoesDbContext context)

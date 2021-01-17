@@ -28,14 +28,33 @@ namespace OnlineShop.Controllers
             {
                 Shoes = _shoesOperation.GetAll()
             };
+            return View(model);
+        }
+
+        public IActionResult ShoesDetails(int Id)
+        {
+            ShoesListVM model = new ShoesListVM()
+            {
+                OnePairShoes = _shoesOperation.GetShoesPair(Id)
+            };
 
             return View(model);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Basket()
         {
-            return View();
+            return View(BasketData.ShoesInBasket);
         }
+
+        public IActionResult AddToBasket(int Id)
+        {
+            var OnePairShoes = _shoesOperation.GetShoesPair(Id);
+            BasketData.ShoesInBasket.Add(OnePairShoes);
+
+            var data = BasketData.ShoesInBasket;
+            return RedirectToAction("Index");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

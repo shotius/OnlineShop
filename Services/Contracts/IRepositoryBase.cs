@@ -8,6 +8,6 @@ namespace Services.Contracts
     {
         IEnumerable<T> FindAll();
 
-        T Get(int id);
+        T Get(int Id);
     }
 }

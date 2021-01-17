@@ -8,5 +8,6 @@ namespace Services.Contracts
     public interface IShoesRepository : IRepositoryBase<Shoes>
     {
         IEnumerable<Shoes> GetAll();
+
     }
 }

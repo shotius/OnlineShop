@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Services.Repositories
@@ -16,5 +17,6 @@ namespace Services.Repositories
         {
             return Context.ManyShoes.Include(x => x.Brand);
         }
+
     }
 }

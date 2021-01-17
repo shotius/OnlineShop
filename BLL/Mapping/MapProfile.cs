@@ -14,8 +14,7 @@ namespace BLL.Mapping
             CreateMap<Shoes, ShoesListDTO>()
                 .ForMember(dest =>
                  dest.Brand,
-                 opt => opt.MapFrom(src => src.Brand.Title));
-                 
+                 opt => opt.MapFrom(src => src.Brand.Title));           
         }
     }
 }

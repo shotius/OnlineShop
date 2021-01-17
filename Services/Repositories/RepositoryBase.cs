@@ -19,9 +19,10 @@ namespace Services.Repositories
         {
             return Context.Set<T>();
         }
-         public T Get(int id)
+
+        public T Get(int Id)
         {
-            return Context.Set<T>().Find(id);
+            return Context.Set<T>().Find(Id);
         }
     }
 }
